@@ -1,0 +1,31 @@
+
+
+* {
+	-fx-primary : #ffffff;
+	-fx-secondary : #FFFF8D;
+	-fx-primarytext : gray;
+	-fx-blue :#1976D2;
+	-fx-red : #FF0000;
+	-fx-color-1: #1976D2
+}
+
+.dash_btn:hover{
+	
+		-fx-background-color: fx-primary;
+		/*-fx-text-fill: -fx-primarytext;*/
+		-fx-border-color:-fx-blue ;
+		-fx-border-width: 0px 0px 0px 6px;
+	
+}
+		
+	.btn_li:hover{
+		-fx-background-color : #ff4500;
+		-fx-text-fill:white;
+		
+		
+		}
+		
+		.pane{
+			-fx-border-color :#ff4500;
+			
+		}

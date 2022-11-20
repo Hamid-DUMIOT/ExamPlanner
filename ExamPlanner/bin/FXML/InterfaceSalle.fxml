@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SalleController">
+   <children>
+      <TableView fx:id="table" layoutX="343.0" layoutY="96.0" prefHeight="406.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="col_idsalle" prefWidth="82.4000244140625" text="idSalle" />
+          <TableColumn fx:id="col_nom" prefWidth="122.39996337890625" text="nom" />
+            <TableColumn fx:id="col_capacc" prefWidth="169.60003662109375" text="Capacité d'accueil" />
+            <TableColumn fx:id="col_plage" prefWidth="224.79998779296875" text="Plage de disponibilité" />
+        </columns>
+      </TableView>
+      <Label layoutX="222.0" layoutY="37.0" text="Liste des salles">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="118.0" prefHeight="272.0" prefWidth="155.0">
+         <children>
+            <Label text="idSalle">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="nom">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="Capacité d'accueil">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="Plage de Disponibilité">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="172.0" layoutY="118.0" prefHeight="272.0" prefWidth="155.0">
+         <children>
+            <TextField fx:id="tfidSalle">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfnom">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfcapacc">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfplage">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <Button fx:id="btninsert" layoutX="16.0" layoutY="423.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="74.0" text="Insert" />
+      <Button fx:id="btnupdate" layoutX="116.0" layoutY="423.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="74.0" text="Update" />
+      <Button fx:id="btndelete" layoutX="213.0" layoutY="423.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="74.0" text="Delete" />
+   </children>
+</AnchorPane>

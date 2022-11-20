@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1155.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FiliereController">
+   <children>
+      <Label layoutX="599.0" layoutY="25.0" text="Liste des Eleves">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="130.0" prefHeight="256.0" prefWidth="100.0">
+         <children>
+            <Label text="Id Eleve">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Nom">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Prenom">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Num Etudiant">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Filiere">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Année">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="btninsert" layoutX="29.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="70.0" text="Insert" />
+      <Button fx:id="btnupdate" layoutX="129.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="70.0" text="Update" />
+      <TableView fx:id="table" layoutX="325.0" layoutY="68.0" prefHeight="435.0" prefWidth="828.0">
+        <columns>
+            <TableColumn fx:id="col_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_nom" prefWidth="140.0" text="Nom" />
+          <TableColumn fx:id="col_prenom" prefWidth="148.79998779296875" text="Prenom" />
+            <TableColumn fx:id="col_numetu" prefWidth="187.199951171875" text="num Etudiant" />
+            <TableColumn fx:id="col_filiere" minWidth="0.0" prefWidth="128.00006103515625" text="Filiere" />
+            <TableColumn fx:id="col_annee" prefWidth="144.7999267578125" text="Année" />
+        </columns>
+      </TableView>
+      <Button fx:id="btndelete" layoutX="226.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="69.0" text="Delete" />
+      <VBox layoutX="129.0" layoutY="138.0" prefHeight="256.0" prefWidth="155.0">
+         <children>
+            <TextField fx:id="tfide" />
+            <TextField fx:id="tfnom">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfprenom">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfnumetu">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tffil">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfannee">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
